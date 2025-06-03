@@ -1,7 +1,7 @@
 """
-1- print a message
-# 2- Python is case-sensitive
-# 3- Writing Comments
+    1- print a message
+    2- Python is case-sensitive
+    3- Writing Comments
 """
 # 1- print a message
 print("Hello, Python learners!")
