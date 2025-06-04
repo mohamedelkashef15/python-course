@@ -1,0 +1,21 @@
+######################
+    # - Ways of creating strings
+    #     1- single quote
+    #     2- double quote
+    #     3- triple quote
+    # - string length
+    # - concatenation
+    # - repeatation
+######################
+
+single_quote = 'This is a single quote string'
+double_quote = "This is a double quote string"
+triple_quote = """This is a triple quote and 
+multi-line string"""
+
+name = "My name's mohamed"
+
+print(single_quote)
+print(double_quote)
+print(triple_quote)
+

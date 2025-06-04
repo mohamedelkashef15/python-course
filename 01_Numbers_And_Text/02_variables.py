@@ -1,18 +1,18 @@
-"""
-    1- What is variable ?
-        Variable named storage location in the computer's memory that holds a value.
-    2- Changing variable values
-    3- Multi Words Variable Names
-        - Camel Case
-        - Pascal Case
-        - Snake Case
-    4- Naming Rules
-        - A variable name must start with a letter or the underscore character
-        - A variable name cannot start with a number
-        - A variable name can only contain alphanumeric characters and underscores (A-z, 0-9, and _ )
-        - A variable name cannot be any of the Python keywords.
-    5- Assign Multiple Values
-"""
+######################
+# 1- What is variable ?
+#     Variable named storage location in the computer's memory that holds a value.
+# 2- Changing variable values
+# 3- Multi Words Variable Names
+#     - Camel Case
+#     - Pascal Case
+#     - Snake Case
+# 4- Naming Rules
+#     - A variable name must start with a letter or the underscore character
+#     - A variable name cannot start with a number
+#     - A variable name can only contain alphanumeric characters and underscores (A-z, 0-9, and _ )
+#     - A variable name cannot be any of the Python keywords.
+# 5- Assign Multiple Values
+######################
 # 1 - What is variable ?
 name = "Mohamed"
 age = 25

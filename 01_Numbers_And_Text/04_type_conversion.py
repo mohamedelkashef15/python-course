@@ -1,16 +1,16 @@
-"""
-    Manual
-        - String to integer
-        - Float to Integer
-        - Integer to float
-        - Integer to String
-        - convert to boolean
-    Automatic
-        - Integer + Float → Float
-        - Integer + Boolean → Integer
-
-    Search for why we use it ?
-"""
+######################
+    # Manual
+    #     - String to integer
+    #     - Float to Integer
+    #     - Integer to float
+    #     - Integer to String
+    #     - convert to boolean
+    # Automatic
+    #     - Integer + Float → Float
+    #     - Integer + Boolean → Integer
+    #
+    # Search for why we use it ?
+######################
 # String to integer
 age = "25"
 age_int = int(age) # converts "25" to => 25

@@ -1,11 +1,11 @@
-"""
-    Data Types
-        - int
-        - float
-        - string
-        - boolean
-    - Change Type after assignment
-"""
+######################
+# Data Types
+#     - int
+#     - float
+#     - string
+#     - boolean
+# - Change Type after assignment
+######################
 age = 30
 name = "Mohamed"
 weight = 70.5
