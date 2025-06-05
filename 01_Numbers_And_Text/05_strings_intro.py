@@ -3,9 +3,6 @@
     #     1- single quote
     #     2- double quote
     #     3- triple quote
-    # - string length
-    # - concatenation
-    # - repeatation
 ######################
 
 single_quote = 'This is a single quote string'
