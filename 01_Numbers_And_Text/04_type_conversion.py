@@ -4,7 +4,7 @@
     #     - Float to Integer
     #     - Integer to float
     #     - Integer to String
-    #     - convert to boolean
+    #*     - convert to boolean Explained in lec.10
     # Automatic
     #     - Integer + Float → Float
     #     - Integer + Boolean → Integer
