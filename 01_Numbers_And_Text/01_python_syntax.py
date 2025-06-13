@@ -15,9 +15,8 @@ print(Name)
 
 # 3- Writing Comments
 # This is a single-line comment
-"""
-    This is a multiple line comment
-    Line 1
-    Line 2
-    Line 3
-"""
+#
+#     This is a multiple line comment
+#     Line 1
+# Line 2
+# Line 3

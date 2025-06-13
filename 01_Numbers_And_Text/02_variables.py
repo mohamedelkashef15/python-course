@@ -1,6 +1,5 @@
 ######################
 # 1- What is variable ?
-#     Variable named storage location in the computer's memory that holds a value.
 # 2- Changing variable values
 # 3- Multi Words Variable Names
 #     - Camel Case
@@ -49,7 +48,8 @@ myAge2 = 22
 # help("keywords")
 
 # 5- Assign multiple values at once
-a, b, c = 1, 2, 3
-print(a, b, c)
+name, age, job = "Mohamed", 25, "Teaching Assistant at Misr University"
+
+print(name, age, job)
 
 
