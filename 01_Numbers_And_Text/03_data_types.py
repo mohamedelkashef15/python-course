@@ -1,18 +1,37 @@
 ######################
 # Data Types
-#     - int
+#     - integer
 #     - float
 #     - string
 #     - boolean
-# - Change Type after assignment
 ######################
-age = 30
-name = "Mohamed"
-weight = 70.5
-has_driving_licence = True
 
-# Print all values and their types
-print(name, type(name))
+# integer
+age = 25
+count = 0
+temp = -5
+
 print(age, type(age))
+print(count, type(count))
+print(temp, type(temp))
+
+# float
+pi = 3.14
+weight = 66.5
+
+print(pi, type(pi))
 print(weight, type(weight))
+
+# string
+name = "Mohamed"
+
+print(name, type(name))
+
+# boolean
+has_driving_licence = True
+is_raining = False
+
 print(has_driving_licence, type(has_driving_licence))
+print(is_raining, type(is_raining))
+
+
