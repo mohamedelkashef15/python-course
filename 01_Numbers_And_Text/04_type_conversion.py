@@ -1,19 +1,18 @@
 ######################
-    # Manual
-    #     - String to integer
-    #     - Float to Integer
-    #     - Integer to float
-    #     - Integer to String
-    # Automatic
-    #     - Integer + Float → Float
-    #     - Integer + Boolean → Integer
-    #
-    # Search for why we use it ?
+# Type conversion (casting)
+#   Manual
+#       - String to integer
+#       - Float to Integer
+#       - Integer to float
+#       - Integer to String
+#   Automatic
+#       - Integer + Float → Float
+#       - Integer + Boolean → Integer
 ######################
+
 # String to integer
 age = "25"
-age_int = int(age) # converts "25" to => 25
-# print(int("12"))
+age_int = int(age)
 
 print(age, type(age))
 print(age_int, type(age_int))
@@ -40,20 +39,19 @@ print(count, type(count))
 print(count_str, type(count_str))
 
 # Automatic
-# Integer + Float => Float
-x = 5
-y = 3.2
-result = x + y
+# Integer + Float → Float
+num1 = 5
+num2 = 3.2
+result = num1 + num2
+
 print(result, type(result))
 
 # Integer + Boolean → Integer
 a = 3
-b = True # 1
+b = True
 result = a + b
+
 print(result, type(result))
-
-
-
 
 
 

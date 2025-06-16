@@ -1,5 +1,6 @@
 #########################
 #   Accessing List items
+#   Changing List items
 #########################
 
 fruits = ["Orange", "Mango", "Banana", "Apple", "Avocado", "Coconut", "Guava"]
@@ -28,8 +29,17 @@ print(nested_list[0])
 print(nested_list[0][2]) # 3
 print(nested_list[2][0]) # 7
 
+#   Changing List items
+# Lists are mutable, meaning you can change their elements after creation.
+colors = ["red", "green", "blue"]
 
+# Change single element
+colors[1] = "yellow"
+print(colors)  # ["red", "yellow", "blue"]
 
+# Change multiple elements with slicing
+colors[0:2] = ["pink", "purple"]
+print(colors)  # Output: ["pink", "purple", "blue"]
 
 
 
