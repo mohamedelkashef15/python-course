@@ -4,26 +4,42 @@
 #   False Values
 #   True Values
 #####################
-# Compare between values
 
-print(10 > 9)
-print(10 < 9)
+# Compare between values
+print(10 > 7)
+print(7 > 10)
 
 # False Values
-# bool converts into boolean value
 print(bool(False))
-print(bool(None))
 print(bool(0))
+print(bool(None))
 print(bool(""))
-print(bool(()))
 print(bool([]))
+print(bool(()))
 print(bool({}))
 
 # True Values
 print(bool(True))
+print(bool(-121))
 print(bool("Hello"))
-print(bool(-5.5))
 print(bool(["apple", "banana"]))
-print(bool({"apple", "banana"}))
 print(bool(("apple", "banana")))
+print(bool({"apple", "banana"}))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
