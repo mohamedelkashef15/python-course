@@ -18,8 +18,18 @@ print(result)
 price = 50.74123123123
 print(f"product price = {price:.1f}")
 
-# Concatenation
-first = "Hello"
-second = "World"
-combine = first + " " + second
-print(combine)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
