@@ -37,10 +37,17 @@ print(numbers)
 #####################################
 # Removing from list item
 # remove() -> first occurance of a value
-fruits = ["apple", "banana", "mango", "banana", "Orange"]
-fruits.remove("banana")
-print(fruits) # ["apple", "Mango", "banana"]
+languages = ['Python', 'Java', 'C++', 'JavaScript', 'Ruby']
+languages.remove("Java")
+print(languages) # ['Python', 'C++', 'JavaScript', 'Ruby']
 
 # pop() -> remove last item
-fruits.pop()
-print(fruits)
+languages.pop()
+print(languages)
+
+# del - remove item or entire list
+del languages[0]
+print(languages)
+
+languages.clear()
+print(languages)
