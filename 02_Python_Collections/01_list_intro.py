@@ -1,20 +1,31 @@
-########################
-    # List
-########################
+#######################
+# Lists Intro
+#######################
 
-# List of strings
-fruits = ["apple", "banana", "mango", "apple"]
+# List of Strings
+fruits = ["Orange", "Apple", "Banana", "Mango"]
 
-print(fruits)
 print(fruits, type(fruits))
+print(len(fruits))
 
 # List of Integers
-numbers = [1, 2 , 3, 4, 5]
+numbers = [1, 2, 3, 4, 5]
 print(numbers)
 
-# List with mixed data types
+# List of different data types
 mixed_list = [1, "Hello", 3.14, True]
+
 print(mixed_list)
 
-# List of lists (nested list)
+# Nested List
 nested_list = [[1, 2, 3], ["a", "b", "c"]]
+
+print(nested_list)
+
+
+
+
+
+
+
+
