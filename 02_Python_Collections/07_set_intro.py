@@ -7,12 +7,12 @@
 #   - Mutable: Can add/remove items
 ############################
 
-# Creating sets
-fruits = {"apple", "banana", "orange", "apple", True, 1, False, 0 }
-print(fruits, type(fruits))
+# Creating Set
+fruits = {"apple", "orange", "banana", "apple", True, 1, 2, 0, False}
 
-# print(fruits[0])
-# print(fruits[0:2])
+print(fruits)
+
+
 
 
 
