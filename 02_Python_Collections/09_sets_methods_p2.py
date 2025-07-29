@@ -19,6 +19,7 @@ print(all_fruits)
 # intersection()
 common_fruits = stand_A.intersection(stand_B)
 print(common_fruits)
+print(stand_A)
 
 # difference()
 only_in_A = stand_A.difference(stand_B)
