@@ -1,29 +1,54 @@
 #########################
 # Dictionaries Methods Part 2
-#   - get()
-#   - pop()
-#   - popItem()
-#   - setDefult()
-#   - fromkeys()
+#   - pop() => Remove and get a specific item by adding it's key
+#   - popItem() => Remove and get the last added item
+#   - setDefult() => Get a value or set it if missing
+#   - fromkeys() => Create a dictionary with default values
+# This method saves you from writing repetitive code when setting up default values!
 #########################
 
-
-
-
-
-
-# dict.fromkeys() - setting up a defult settings
-# returns a dictionary with the specified keys and the specified value.
-
-keys = {
-    "key1",
-    "key2",
-    "key3"
+# pop()
+supermarket = {
+    "milk": 2,
+    "eggs": 12,
+    "bread": 1,
+    "Chips": 4,
 }
 
-y = "false"
+print(f"Before {supermarket}")
+supermarket.pop("milk")
+print(f"After {supermarket}")
 
-print(dict.fromkeys(keys, y))
+# popItem()
+supermarket.popitem()
+print(supermarket)
 
+# setDefault()
+cars = {
+    "brand": "Hyundai",
+    "year": "2026",
+    # "model": "Elantra",
+}
 
+default = cars.setdefault("model", "Unknown")
 
+print(cars)
+
+# fromkeys()
+# Example 1
+absent_students = ["Mohamed", "Ahmed", "Mostafa", "Islam"]
+
+attendance = dict.fromkeys(absent_students, "absent")
+
+print(attendance)
+
+# Example 2
+fruits = {
+    "apples",
+    "banana",
+    "orange",
+    "mango"
+}
+
+fruits_initial_price = dict.fromkeys(fruits, "0.00")
+print(fruits_initial_price)
