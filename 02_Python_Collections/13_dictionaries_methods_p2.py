@@ -13,6 +13,9 @@ supermarket = {
     "chips": 4
 }
 
+print("This is a 1920x1080 video with 60fps ")
+print("This is a 2k video with 30 fps")
+
 # pop()
 print(f"before {supermarket}")
 supermarket.pop("milk")
