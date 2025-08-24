@@ -12,7 +12,7 @@
 #     # Code if none of the above are True
 ###########################
 
-grade = 85
+grade = 35
 
 if grade >= 90:
     print("Grade: A")
@@ -23,4 +23,6 @@ elif grade >= 70:
 elif grade >= 60:
     print("Grade: D")
 else:
-    print("Failed")
+    print("You Failed")
+
+
