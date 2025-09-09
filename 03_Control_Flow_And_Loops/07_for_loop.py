@@ -1,8 +1,7 @@
 ##############################
 # For loop
-# allow you to execute a block of code repeatedly until a specific condition is met. They help automate repetitive tasks and make code more efficient and readable
 
-# for variable in sequence
+# for variable in sequence:
 #   code to execute repeatedly
 ##############################
 
@@ -17,37 +16,53 @@
 # print(9)
 # print(10)
 
-# ? Explain step in range
+#* Numbers
 for i in range(1, 11):
-    print(i)
+    print(i, i in range(1, 11))
 
 # i = 1
 # i = 2
 # i = 3
-# ....
+# ...
 # i = 10
-print("#"*20)
 
-for i in range(6):
-    print(i)
-
-
-
+#* List
 fruits = ["apple", "banana", "orange"]
 
 for fruit in fruits:
-  print(fruit)
+    print(fruit)
 
 # fruit = apple
 # fruit = banana
 # fruit = orange
 
+#* string
+
 name = "Mohamed"
+
 for s in name:
     print(s)
 
+# s = M
+
+#* Example
+backpack = ["pencil", "notebook", "eraser", "sharpener"]
+
+for item in backpack:
+    if item == "notebook":
+        print("Found my notebook")
+    else:
+        print(f"I have a {item}")
 
 
+# item = pencil
+# item = notebook
+# item = eraser
+# item = sharpener
 
-
+# output
+# I have a pencil
+# Found my notebook
+# I have an eraser
+# I have a sharpener
 
