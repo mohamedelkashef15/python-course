@@ -4,6 +4,7 @@
 # Write a Python program that takes two integers as input and returns their sum.
 #############################
 # * Problem Instructions
+# Instructions
 # 1- Read the first number → store it in variable num1.
 # 2- Read the second number → store it in variable num2.
 # 3- Calculate sum of 2 numbers in third variable called sum_result

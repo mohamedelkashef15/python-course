@@ -4,6 +4,7 @@
 # Write a Python program that calculate Age in Days
 #############################
 # * Problem instructions
+# Instructions
 # 1- Ask the user to enter their age in years.
 # 2- Multiply the number of years by 365 (assuming 1 year = 365 days).
 # 3- Store the result in a variable called age_in_days.

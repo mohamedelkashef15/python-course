@@ -4,6 +4,7 @@
 # Write a Python program that Convert Minutes to Seconds
 #############################
 # * Problem Instructions
+# Instructions
 # 1- Get the number of minutes (can be integer or float).
 # 2- Multiply the minutes by 60 (because 1 minute = 60 seconds).
 # 3- Store the result (seconds).

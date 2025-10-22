@@ -4,6 +4,7 @@
 # Write a Python program that calculate Area of a Rectangle
 #############################
 # * Problem instructions
+# Instructions
 # 1- Ask the user to enter the length of the rectangle.
 # 2- Ask the user to enter the width of the rectangle.
 # 3- Multiply the length by the width to calculate the area.
