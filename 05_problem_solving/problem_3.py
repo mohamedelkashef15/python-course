@@ -2,20 +2,24 @@
 # Problem 3
 # * Problem definition
 # Write a Python program that calculate Area of a Rectangle
+# ? hint area = length * width
 #############################
 # * Problem instructions
-# Instructions
-# 1- Ask the user to enter the length of the rectangle.
-# 2- Ask the user to enter the width of the rectangle.
-# 3- Multiply the length by the width to calculate the area.
-# 4- Display the area on the screen.
+# 1- Ask user to enter value of length
+# 2- Ask user to enter value of width
+# 3- Multiply length by width to get area of rectangle
+# 4- display result
 
-length = float(input("Enter the length of the rectangle: "))
-width = float(input("Enter the width of the rectangle: "))
+# * Problem solution
+length = float(input("Enter the length of rectangle: "))
+width = float(input("Enter the width of rectangle: "))
 
 area = length * width
 
-print(f"The area of the rectangle is: {area}")
+print(f"The area of rectangle is: {area}")
 
-# * Expected Output
-# The area of the rectangle is: 20.0
+
+
+
+
+

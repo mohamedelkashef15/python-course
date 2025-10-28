@@ -1,27 +1,34 @@
 #############################
 # Problem 5
 # * Problem definition
-# Write a Python program that Swap Two Variables
+# Write a Python program that ask user to enter 2 numbers in Two Variables then Swap variables
+# ? hint: if a = 5, b = 10 expected output is b = 5, a = 10
 #############################
-# * Swap variables
-# Instructions
-# 1- Ask the user to enter two variables (e.g., a and b).
-# 2- Swap their values without using a third variable.
-# 3- Display the values before and after swapping.
+# * Problem Instructions
+# 1- Ask user to enter 2 value inside 2 variables (a, b)
+# 2- swap their values
+# 3- display result before swapping, after swapping
 
 # * Problem Solution
 a = input("Enter first value (a): ")
 b = input("Enter second value (b): ")
 
-# Step 2: Display before swapping
-print("\nBefore swapping:")
-print("a =", a)
-print("b =", b)
+print("\nBefore swapping")
+print(f"a = {a}")
+print(f"b = {b}")
 
-# Step 3: Swap without using a third variable
 a, b = b, a
 
-# Step 4: Display after swapping
-print("\nAfter swapping:")
-print("a =", a)
-print("b =", b)
+print("\nAfter swapping")
+print(f"a = {a}")
+print(f"b = {b}")
+
+
+
+
+
+
+
+
+
+
