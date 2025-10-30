@@ -1,7 +1,7 @@
 #########################
 # ternary conditional operator
 
-# [return this if True] if [codition] else [return this if False]
+# [return this if True] if [condition] else [return this if False]
 #########################
 
 age = 16
