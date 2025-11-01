@@ -1,29 +1,29 @@
 #############################
 # Problem 6
 # * Problem definition
-# Write a Python program that that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
+# Write a Python program that that takes an integer as input and display "Even" for even numbers or "Odd" for odd numbers.
 #############################
-# Instructions
-# 1- Ask the user to enter an integer number.
-# 2- Check whether the number is even or odd.
-# 3- Display the result on the screen.
+# * Problem Instructions
+# 1- Ask from user to enter integer number
+# 2- Check weather the number even or odd
+# 3- display result
 
+# * Problem Solution
 num = int(input("Enter an integer number: "))
 
-# Step 2: Check if even or odd
 if num % 2 == 0:
-    print("The number is even.")
+    print(f"{num} is even number")
 else:
-    print("The number is odd.")
+    print(f"{num} is odd number")
 
 
+# 10 % 2 == 0
+# 2 * 5 = 10
+# Reminder = 0
 
-
-
-
-
-
-
+# 9 % 2
+# 2 * 4 = 8
+# Reminder = 1
 
 
 
