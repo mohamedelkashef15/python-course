@@ -1,7 +1,7 @@
 #############################
 # Problem 8
 # * Problem definition
-# Write a Python program that that takes an integer as an argument and returns it as negative number
+# Write a Python program that that takes an integer as an input and display it as negative number
 #############################
 # Instructions
 # 1- Ask the user to enter a string (a word or sentence).
