@@ -1,40 +1,24 @@
 #############################
 # Problem 17
 # * Problem definition
-# Write a Python program that takes a string from the user and checks whether it starts and ends with specific letters entered by the user.
+# Write a Python program that takes multiple words from the user (separated by spaces) and joins them into a single string where each word is separated by a comma and a space.
 
+# ? apple banana cherry mango
 #############################
-# * Problem Instructions
-# 1- Ask the user to enter a string.
-# 2- Ask the user to enter a starting letter to check.
-# 3- Ask the user to enter an ending letter to check.
-# 4- Use the string methods startswith() and endswith() to perform the checks.
-# 5- Display appropriate messages depending on the result.
+# * Problem instructions
+# 1- Take input from the user as a single string of words separated by spaces.
+# 2- Split the string into a list of words.
+# 3- Join the words using a comma and a space ", ".
+# 4- Print the final formatted string.
 
-# * Problem Solution
+# * Problem solution
+words = input("Enter words separated by spaces: ")
 
-text = input("Enter a string: ")
-start = input("Enter the starting letter to check: ")
-end = input("Enter the ending letter to check: ")
+# Split words into a list
+word_list = words.split()
 
-starts_with = text.startswith(start)
-ends_with = text.endswith(end)
+# Join words with commas
+result = ", ".join(word_list)
 
-if starts_with and ends_with:
-    print(f"The string starts with '{start}' and ends with '{end}'.")
-elif starts_with:
-    print(f"The string starts with '{start}' but does not end with '{end}'.")
-elif ends_with:
-    print(f"The string ends with '{end}' but does not start with '{start}'.")
-else:
-    print(f"The string neither starts with '{start}' nor ends with '{end}'.")
-
-
-
-
-
-
-
-
-
-
+# Display result
+print(result)

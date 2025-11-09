@@ -1,28 +1,29 @@
 #############################
 # Problem 16
 # * Problem definition
-# Write a Python program that takes a string from the user and removes all punctuation marks (like ., ,, !, ?, etc.) from it.
-# ? !()-[]{};:'"\,<>./?@#$%^&*_~
-#############################
+# Write a Python program that takes a string from the user and counts how many letters and digits it contains.
 
+#############################
 # * Problem Instructions
-# 1- Ask the user to enter a sentence.
-# 2- Define a set or list of punctuation characters to remove.
-# 3- Loop through the string and remove any character that is a punctuation mark.
-# 4- Display the cleaned string without punctuation.
+# 1- Ask the user to enter a string.
+# 2- Initialize two counters — one for digits and one for letters.
+# 3- Loop through each character in the string.
+# 4- Use the isalpha() method to check if a character is a letter.
+# 5- Use the isdigit() method to check if a character is a digit.
+# 6- Increment the appropriate counter based on the type.
+# 7- Print the total number of letters and digits.
 
 # * Problem Solution
-text = input("Enter a sentence: ")
-# Example: Hello, world! Python is great :)
+text = input("Enter a string: ")
 
-punctuations = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
+letters = 0
+digits = 0
 
-cleaned_text = ""
 for char in text:
-    if char not in punctuations:
-        cleaned_text += char
+    if char.isalpha():
+        letters += 1
+    elif char.isdigit():
+        digits += 1
 
-print("Sentence without punctuation:", cleaned_text)
-
-
-
+print("Number of letters:", letters)
+print("Number of digits:", digits)
