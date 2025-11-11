@@ -1,20 +1,36 @@
 #############################
-# Problem 39
+# Problem 40
 # * Problem definition
-# Write a Python program that takes a list of words and returns only the words that have more than 3 characters.
-# Use the built-in filter() function to perform the filtering.
+# Write a Python program that takes a list of strings and removes empty strings while also stripping leading and trailing spaces from the remaining ones.
+# Use the built-in filter() function to remove empty strings and the map() function to strip spaces.
 #############################
 # * Problem instruction
-# 1- Create a list of words.
-# 2- Use the filter() function with a lambda expression to keep only the words whose length is greater than 3.
-# 3- Convert the result from filter into a list using list().
-# 4- Print both the original list and the filtered list.
+# 1- Create a list containing strings, some of which may be empty or have extra spaces.
+# 2- Use the filter() function to remove all empty strings ("").
+# 3- Use the map() function with str.strip (or a lambda) to remove spaces from each string.
+# 4- Convert both results to lists and print the cleaned list.
 
 # * Problem solution
-words = ["hi", "hello", "sun", "world", "go", "python"]
+# Define a list of strings
+words = ["  apple  ", "", "banana ", "  ", "cherry", "  grape"]
 
-# Use filter() to get words longer than 3 characters
-long_words = list(filter(lambda word: len(word) > 3, words))
+# Step 1: Remove empty strings (including spaces-only strings)
+non_empty = list(filter(lambda word: word.strip() != "", words))
+
+# Step 2: Strip spaces from remaining strings
+cleaned_words = list(map(lambda word: word.strip(), non_empty))
 
 print("Original list:", words)
-print("Filtered list (more than 3 letters):", long_words)
+print("Cleaned list:", cleaned_words)
+
+
+
+
+
+
+
+
+
+
+
+

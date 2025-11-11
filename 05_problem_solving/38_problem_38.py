@@ -1,27 +1,23 @@
 #############################
-# Problem 40
+# Problem 38
 # * Problem definition
-# Write a Python program that takes a list of strings and removes empty strings while also stripping leading and trailing spaces from the remaining ones.
-# Use the built-in filter() function to remove empty strings and the map() function to strip spaces.
+# Write a Python program that takes a list of strings and returns a new list where all strings are converted to uppercase.
+# Use the built-in map() function to achieve this transformation.
 #############################
 # * Problem instruction
-# 1- Create a list containing strings, some of which may be empty or have extra spaces.
-# 2- Use the filter() function to remove all empty strings ("").
-# 3- Use the map() function with str.strip (or a lambda) to remove spaces from each string.
-# 4- Convert both results to lists and print the cleaned list.
+# 1- Create a list containing multiple strings.
+# 2- Use the map() function with the built-in str.upper method to convert each string to uppercase.
+# 3- Convert the result from map into a list using list().
+# 4- Print both the original list and the new uppercase list.
 
 # * Problem solution
-# Define a list of strings
-words = ["  apple  ", "", "banana ", "  ", "cherry", "  grape"]
+words = ["hello", "world", "python", "map"]
 
-# Step 1: Remove empty strings (including spaces-only strings)
-non_empty = list(filter(lambda word: word.strip() != "", words))
-
-# Step 2: Strip spaces from remaining strings
-cleaned_words = list(map(lambda word: word.strip(), non_empty))
+# Use map() to convert all strings to uppercase
+uppercase_words = list(map(lambda word: word.upper(), words))
 
 print("Original list:", words)
-print("Cleaned list:", cleaned_words)
+print("Uppercase list:", uppercase_words)
 
 
 
