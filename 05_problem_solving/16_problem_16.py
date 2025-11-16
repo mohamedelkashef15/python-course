@@ -3,19 +3,16 @@
 # * Problem definition
 # Write a Python program that takes a string from the user and counts how many letters and digits it contains.
 
+# ? hello123 => 5 letters, 3 digits
 #############################
 # * Problem Instructions
-# 1- Ask the user to enter a string.
-# 2- Initialize two counters — one for digits and one for letters.
-# 3- Loop through each character in the string.
-# 4- Use the isalpha() method to check if a character is a letter.
-# 5- Use the isdigit() method to check if a character is a digit.
-# 6- Increment the appropriate counter based on the type.
-# 7- Print the total number of letters and digits.
+# 1- Ask user to enter a string
+# 2- create 2 variables one to count letters and one for digits
+# 3- loop on string then check if character is letter increment letters by 1, if character is digit then increment digit by 1
+# 4- display result of number of letters and digits
 
-# * Problem Solution
+# * Problem solution
 text = input("Enter a string: ")
-
 letters = 0
 digits = 0
 
@@ -25,5 +22,15 @@ for char in text:
     elif char.isdigit():
         digits += 1
 
-print("Number of letters:", letters)
-print("Number of digits:", digits)
+# hello123
+print(f"Number of letters: {letters}")
+print(f"Number of digits: {digits}")
+
+
+
+
+
+
+
+
+

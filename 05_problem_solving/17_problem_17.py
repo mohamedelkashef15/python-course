@@ -5,20 +5,26 @@
 
 # ? apple banana cherry mango
 #############################
-# * Problem instructions
-# 1- Take input from the user as a single string of words separated by spaces.
-# 2- Split the string into a list of words.
-# 3- Join the words using a comma and a space ", ".
-# 4- Print the final formatted string.
+# * Problem Instructions
+# 1- Ask user to enter a multiple words
+# 2- Split the string into list of words then join the words with comma and spaces
+# 3- display result
 
-# * Problem solution
-words = input("Enter words separated by spaces: ")
+# * Problem Solution
+text = input("Enter multiple words: ")
 
-# Split words into a list
-word_list = words.split()
+word_split = text.split()
+print(word_split)
 
-# Join words with commas
-result = ", ".join(word_list)
+result = ", ".join(word_split)
 
-# Display result
 print(result)
+
+
+
+
+
+
+
+
+

@@ -3,6 +3,7 @@
 # * Problem definition
 # Write a Python program that takes a string from the user and returns a new string with all its characters sorted in alphabetical order.
 # ? explain the difference between sort and sorted
+# ? adkjfabcakldfklamvaldei
 #############################
 # * Problem instructions
 # 1- Take input from the user as a string.

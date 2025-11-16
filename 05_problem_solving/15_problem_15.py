@@ -5,21 +5,21 @@
 
 #############################
 # * Problem Instructions
-# 1- Ask the user to enter a string.
-# 2- Ask the user to enter a starting letter to check.
-# 3- Ask the user to enter an ending letter to check.
-# 4- Use the string methods startswith() and endswith() to perform the checks.
-# 5- Display appropriate messages depending on the result.
+# 1- Ask user to enter a word or a sentence
+# 2- check if word or sentence first letter equals last letter if they are equal then print true else print false
+# 3- display result
 
 # * Problem Solution
-
-text = input("Enter a string: ")
-
+text = input("Enter a sentence: ")
 
 if text[0] == text[-1]:
-    print("true")
+    print("True")
 else:
-    print("False")
+    print("false")
+
+
+
+
 
 
 
