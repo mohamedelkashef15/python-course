@@ -1,23 +1,29 @@
 #############################
 # Problem 19
 # * Problem definition
-# Write a python program that calculates the sum of all its elements using a for loop.
+# Write a Python program that defines a list of numbers and finds both the maximum and minimum values from that list.
 #############################
 
 # * Problem instructions
-# 1- Initialize a variable (for example total) to 0.
-# 2- Loop through each number in the list.
-# 3- Add each number to total.
-# 4- Print the final result.
+# 1- Use built-in functions max and min to get maximum, minimum number
+# 2- display result
 
 # * Problem solution
-numbers = [5, 10, 15, 20, 25]
-total = 0
+numbers = [8, 3, 15, 20, 6]
 
-for num in numbers:
-    total += num
+maximum = max(numbers)
+minimum = min(numbers)
 
-print(f"The sum of all elements is: {total}")
+print(f"Maximum Number {maximum}")
+print(f"Minimum Number {minimum}")
 
-# Another method
-# total = sum(numbers)
+
+
+
+
+
+
+
+
+
+

@@ -1,19 +1,23 @@
 #############################
 # Problem 18
 # * Problem definition
-# Write a Python program that takes a string from the user and returns a new string with all its characters sorted in alphabetical order.
-# ? explain the difference between sort and sorted
-# ? adkjfabcakldfklamvaldei
+# Write a python program that calculates the sum of all its elements using a for loop.
 #############################
+
 # * Problem instructions
-# 1- Take input from the user as a string.
-# 2- Convert the string into a list of characters.
-# 3- Sort the list alphabetically using the sorted() function.
-# 4- Join the sorted characters back into a single string.
-# 5- Print the sorted string.
+# 1- Initialize a variable (for example total) to 0.
+# 2- Loop through each number in the list.
+# 3- Add each number to total.
+# 4- Print the final result.
 
-text = input("Enter a string: ")
+# * Problem solution
+numbers = [5, 10, 15, 20, 25]
+total = 0
 
-sorted_text = ''.join(sorted(text))
+for num in numbers:
+    total += num
 
-print(sorted_text)
+print(f"The sum of all elements is: {total}")
+
+# Another method
+# total = sum(numbers)

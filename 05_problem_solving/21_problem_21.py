@@ -1,24 +1,34 @@
 #############################
 # Problem 21
 # * Problem definition
-# Write a Python program that defines a list of numbers and counts how many times a specific element appears in the list USING FOR LOOP
+# Write a Python program that defines a list containing duplicate elements and returns a new list with all duplicates removed, keeping only unique elements.
 #############################
 
 # * Problem instructions
-# 1- Define a list containing several numbers.
-# 2- Choose an element to count (for example, 3).
-# 3- Use for loop to compare between num and element if they are equals then increase count by 1 if not then do nothing
-# 4- display result
-
+# 1- Use loops or set to remove duplicates
+# 2- display results
 # * Problem solution
-numbers = [1, 3, 5, 3, 7, 3, 9]
-element = 3
-count = 0
+numbers = [1, 2, 3, 2, 4, 3, 5]
 
-# Loop through the list and count matches
+# Using loop
+unique_numbers = []
 for num in numbers:
-    if num == element:
-        count += 1
+    if num not in unique_numbers:
+        unique_numbers.append(num)
 
-# Display result
-print(f"The number {element} appears {count} times in the list.")
+print(f"List after removing duplicates: {unique_numbers}")
+
+# Using set
+# unique_numbers = list(set(numbers))
+# print(f"List after removing duplicates: {unique_numbers}")
+
+
+
+
+
+
+
+
+
+
+

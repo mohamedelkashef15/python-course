@@ -1,32 +1,36 @@
 #############################
 # Problem 22
 # * Problem definition
-# Write a Python program that defines a list containing duplicate elements and returns a new list with all duplicates removed, keeping only unique elements.
+# Write a Python program that defines a list and checks whether a specific element exists in that list. If it exists, print a message confirming its presence; otherwise, indicate that it is not found.
 #############################
 
 # * Problem instructions
-# 1- Define a list with some duplicate elements.
-# 2- Use either a set or loop logic to remove duplicates.
-# 3- Preserve the order of elements if possible.
-# 4- Print the final list with duplicates removed.
+# 1- Loop on each element inside list then check if element exists inside list then print "element exists" then stop the loop otherwise "element is not exist"
 
 # * Problem solution
-# Using set
-numbers = [1, 2, 3, 2, 4, 3, 5]
+numbers = [10, 20, 30, 40, 50]
+element = 30
+# found = False
+#
+# for num in numbers:
+#     if num == element:
+#         found = True
+#         break
 
-unique_numbers = list(set(numbers))
+if element in numbers:
+    print(f"{element} is exist in list")
+else:
+    print(f"{element} is not exist in list")
 
-print("List after removing duplicates:", unique_numbers)
 
-# using loops
-# Remove duplicates manually
-unique_numbers = []
-for num in numbers:
-    if num not in unique_numbers:
-        unique_numbers.append(num)
 
-# Display result
-print(f"List after removing duplicates: {unique_numbers}")
+
+
+
+
+
+
+
 
 
 
