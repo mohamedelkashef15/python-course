@@ -1,25 +1,28 @@
 #############################
 # Problem 24
 # * Problem definition
-# Write a Python program that defines a list of numbers and separates the even and odd numbers into two different lists.
+# Write a Python program that defines a tuple and identifies all elements that appear more than once.
 #############################
 
 # * Problem instructions
-# 1- Define the element you want to check.
-# 2- Use the in keyword to check if the element is in the list.
-# 3- Print an appropriate message based on the result.
+# 1- Create empty list to add repeated numbers
+# 2- loop through tuple then check if number is repeated and is not already added in repeated list, add it
+# 3- display result => repeated list
 
 # * Problem solution
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
-even_numbers = []
-odd_numbers = []
+numbers = (1, 2, 3, 2, 4, 5, 3, 6)
+repeated_list = []
 
 for num in numbers:
-    if num % 2 == 0:
-        even_numbers.append(num)
-    else:
-        odd_numbers.append(num)
+    if numbers.count(num) > 1 and num not in repeated_list:
+        repeated_list.append(num)
 
-print(f"Even numbers: {even_numbers}")
-print(f"Odd numbers: {odd_numbers}")
+
+print(repeated_list)
+
+# repeated List = [2, 3]
+
+
+
+
+

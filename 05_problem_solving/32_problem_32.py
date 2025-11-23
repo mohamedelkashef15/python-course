@@ -1,27 +1,25 @@
 #############################
-# Problem 32 | remove duplicates using set and list 
+# Problem 32
 # * Problem definition
-# Write a Python program that set from a list to remove duplicate elements.
-# You are given a list that may contain repeated values — your task is to remove the duplicates.
+# Write a Python program that takes a list of words and returns only the words that have more than 3 characters.
+
 #############################
 # * Problem instruction
-# 1- Create a list that contains some duplicate elements.
-# 2- Convert the list into a set to automatically remove duplicates.
-# 3- (Optional) Convert the set back into a list if you need a list result.
-# 4- Print both the original list and the set without duplicates.
+# 1- Use filter built-in function to keep only words which their characters are more than 3
+# 2- Convert the result filter to list
+# 3- print both original and filtered list
 
 # * Problem solution
-numbers = [1, 2, 3, 1, 2, 4, 5, 5]
+words = ["hi", "hello", "sun", "world", "go", "python"]
 
-# Convert list to set to remove duplicates
-unique_numbers = set(numbers)
+long_words = list(filter(lambda word: len(word) > 3, words))
 
-print("Original List:", numbers)
-print("Set (No Duplicates):", unique_numbers)
+print(f"Original list: {words}")
+print(f"long words list: {long_words}")
 
-# Optional: convert back to list
-unique_list = list(unique_numbers)
-print("List Without Duplicates:", unique_list)
+
+
+
 
 
 

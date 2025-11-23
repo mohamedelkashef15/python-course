@@ -1,28 +1,43 @@
 #############################
 # Problem 33
 # * Problem definition
-# Write a Python program to find the common characters that appear in all given strings. You will use set operations to find the intersection (common elements) among multiple strings.
+# Write a Python program that takes a list of strings and removes empty strings while also stripping leading and trailing spaces from the remaining ones.
 
 #############################
 # * Problem instruction
-# 1- Create multiple strings.
-# 2- Convert each string into a set (since sets only contain unique characters).
-# 3- Use the intersection() method to find common characters among all sets.
-# 4- Print the common characters.
+# 1- Use filter built-in function to remove all empty strings
+# 2- Use map built-in function to remove all spaces from each string
+# 3- Convert both result into lists then print cleaned list
 
 # * Problem solution
+words = ["  apple  ", "", "banana ", "  ", "cherry", "  grape"]
 
-# Define multiple strings
-str1 = "python"
-str2 = "typhoon"
-str3 = "phony"
+non_empty = list(filter(lambda word: word.strip() != "", words))
 
-# Convert strings to sets
-set1 = set(str1)
-set2 = set(str2)
-set3 = set(str3)
+# "  apple  " => "apple" => True
+# "" => "" => False
+# "banana " => "banana" => Ture
+# "  " => "" => False
+# "cherry" => "cherry" => True
+# "  grape" => "grape" => True
 
-# Find common characters using intersection
-common_chars = set1.intersection(set2, set3)
+print(non_empty)
 
-print("Common characters:", common_chars)
+cleaned_list = list(map(lambda word: word.strip(), non_empty))
+
+print(f"Original list: {words}")
+print(f"Cleaned list {cleaned_list}")
+
+# Output ['apple', 'banana', 'cherry', 'grape']
+
+
+
+
+
+
+
+
+
+
+
+

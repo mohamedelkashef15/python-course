@@ -1,20 +1,29 @@
 #############################
 # Problem 28
 # * Problem definition
-# Write a Python program that defines multiple tuples and unpacks their elements into separate variables in a single line.
+# Write a Python program that takes a dictionary and inverts it, meaning the keys become values and the values become keys.
 #############################
-
-# * Problem instructions
-# 1- Define two or more tuples, each containing a fixed number of elements.
-# 2- Unpack each tuple into separate variables using tuple unpacking.
-# 3- Print the unpacked variables to verify.
+# * Problem instruction
+# 1- Create empty dictionary "inverted_dictionary"
+# 2- Loop through original dict then assign value as a new key, key as a new value
+# 3- print "inverted_dictionary"
 
 # * Problem solution
-tuple1 = (1, 2, 3)
-tuple2 = (4, 5, 6)
+original_dict = {'a': 1, 'b': 2, 'c': 3}
 
-a, b, c = tuple1
-x, y, z = tuple2
+inverted_dictionary = {}
 
-print("Tuple1 elements:", a, b, c)
-print("Tuple2 elements:", x, y, z)
+for key, value in original_dict.items():
+    print(key, value)
+    inverted_dictionary[value] = key
+
+print(inverted_dictionary)
+
+
+
+
+
+
+
+
+

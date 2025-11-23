@@ -1,33 +1,24 @@
 #############################
 # Problem 27
 # * Problem definition
-# Write a Python program that defines a tuple and identifies all elements that appear more than once.
+# Write a Python program to detect whether a list contains duplicate elements or not
 #############################
-
-# * Problem instructions
-# 1- Define a tuple with some repeated elements.
-# 2- Create an empty list or set to store repeated elements.
-# 3- Loop through the tuple and count occurrences of each element.
-# 4- If an element appears more than once and is not already in the repeated list, add it.
-# 5- Print the repeated elements.
+# * Problem instruction
+# 1- Convert numbers into a set
+# 2- Compare between original list and set
+# 3- If original list length equals set length then print No duplicate found else duplicate detected
 
 # * Problem solution
-numbers = (1, 2, 3, 2, 4, 5, 3, 6)
+numbers = [1, 2, 3, 4, 2, 5, 1]
+unique_numbers = set(numbers)
 
-# List to store repeated elements
-repeated = []
+print(numbers)
+print(unique_numbers)
 
-# Loop through the tuple
-for num in numbers:
-    if numbers.count(num) > 1 and num not in repeated:
-        repeated.append(num)
-
-# print(numbers.count(3))
-# Display result
-print("Repeated elements:", repeated)
-
-
-
+if len(numbers) == len(unique_numbers):
+    print("No duplicate found")
+else:
+    print("Duplicate detected")
 
 
 

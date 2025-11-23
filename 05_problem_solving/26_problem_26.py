@@ -1,26 +1,40 @@
 #############################
 # Problem 26
 # * Problem definition
-# Write a Python program that defines a tuple and finds the index of a specific element in that tuple. If the element does not exist, handle it gracefully.
+# Write a Python program to find the common characters that appear in all given strings.
 #############################
-
-# * Problem instructions
-# 1- Define the element whose index you want to find.
-# 2- Use the index() method to find the position of the element.
-# 3- Print the index or a message if the element is not found.
+# * Problem instruction
+# 1- Convert 3 strings into 3 sets
+# 2- Use intersection method to get the common characters
+# 3- print result
 
 # * Problem solution
-# Define the tuple
-numbers = (10, 20, 30, 40, 50)
+str1 = "python"
+str2 = "typhoon"
+str3 = "phony"
 
-# Define the element to find
-element = 10
+set1 = set(str1)
+set2 = set(str2)
+set3 = set(str3)
 
-if element in numbers:
-    index = numbers.index(element)
-    print(f"The element {element} is at index {index}.")
-else:
-    print(f"The element {element} is not in the tuple.")
+common_characters = set1.intersection(set2, set3)
+
+print(f"Common characters {common_characters}")
+
+# [p, y, h, o, n]
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

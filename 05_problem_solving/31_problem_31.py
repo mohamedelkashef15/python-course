@@ -1,31 +1,33 @@
 #############################
-# !Problem 31
+# Problem 31
 # * Problem definition
-# Write a Python program that demonstrates how to add new elements to a set and remove existing elements from it using built-in methods.
+# Write a Python program that takes a list of strings and returns a new list where all strings are converted to uppercase.
+
 #############################
 # * Problem instruction
-# 1- Define a set with some initial elements.
-# 2- Use the add() method to insert a single new element.
-# 3- Use the update() method to add multiple elements at once.
-# 4- Use the remove() or discard() methods to delete elements.
-# 5- Print the set after each operation.
+# 1- Use built-in function map with str.upper() method to convert each string into upper case
+# 2- Convert map into list
+# 3- print original list and upper case list
 
 # * Problem solution
+words = ["hello", "world", "python", "map"]
 
-numbers = {1, 2, 3}
-print("Original set:", numbers)
+upper_list = list(map(lambda word: word.upper(), words))
 
-numbers.add(4)
-print("After adding 4:", numbers)
+print(f"Original list {words}")
+print(f"Upper case list {upper_list}")
 
-numbers.update([5, 6])
-print("After adding multiple elements:", numbers)
 
-numbers.remove(2)
-print("After removing 2:", numbers)
 
-numbers.discard(10)
-print("After discarding 10 (non-existing):", numbers)
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,26 +1,32 @@
 #############################
-# Problem 29 - Sets
+# Problem 36
 # * Problem definition
-# Write a Python program that defines two sets and finds their union (all unique elements) and intersection (common elements).
+# Write a Python program that merges two dictionaries into a single dictionary. If both dictionaries have the same key, the value from the second dictionary should overwrite the first.
 #############################
 # * Problem instruction
-# 1- Define two sets with some overlapping elements.
-# 2- Use the union() method or | operator to find the union.
-# 3- Use the intersection() method or & operator to find the intersection.
-# 4- Print both results.
+# 1- Create two dictionaries.
+# 2- Use the update() method to merge the second dictionary into the first.
+# 3- Print the merged dictionary.
+# 4- (Optional) Use dictionary unpacking for a concise one-line solution.
 
 # * Problem solution
-set1 = {1, 2, 3, 4, 5}
-set2 = {4, 5, 6, 7, 8}
+# Method 1:
+dict1 = {'a': 1, 'b': 2}
+dict2 = {'b': 3, 'c': 4}
 
-# Find union and intersection
-union_result = set1.union(set2)
-intersection_result = set1.intersection(set2)
+# Merge dict2 into dict1
+dict1.update(dict2)
 
-# Method 2
-# union_result = set1 | set2
-# intersection_result = set1 & set2
+print("Merged dictionary:", dict1)
 
-# Display results
-print("Union:", union_result)
-print("Intersection:", intersection_result)
+# Method 2:
+dict1 = {'a': 1, 'b': 2}
+dict2 = {'b': 3, 'c': 4}
+
+# Merge using dictionary unpacking
+merged_dict = {**dict1, **dict2}
+
+print("Merged dictionary:", merged_dict)
+
+
+
