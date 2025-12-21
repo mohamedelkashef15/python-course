@@ -1,0 +1,29 @@
+Step 1: Create the Menu Display
+    Create a display_menu() function that prints all options (View, Add, Complete, Delete, Exit)
+
+Step 2: Set Up the Main Loop
+    Create main() function with a while True loop that displays the menu and gets user input
+
+Step 3: Initialize Task Storage
+    Create an empty list tasks = [] to store all tasks as dictionaries
+
+Step 4: Build the View Tasks Feature
+    Create view_tasks() function that loops through tasks and displays them with numbers and completion status
+
+Step 5: Build the Add Task Feature
+    Create add_task() function that gets user input and appends a new task dictionary to the list
+
+Step 6: Build the Complete Task Feature
+    Create complete_task() function that shows tasks, gets task number, and marks it as completed
+
+Step 7: Build the Delete Task Feature
+    Create delete_task() function that shows tasks, gets task number, and removes it from the list
+
+Step 8: Connect Menu to Functions
+    In main() loop, add if-elif statements to call the right function based on user's menu choice
+
+Step 9: Add Input Validation
+    Add try-except blocks to handle invalid numbers and check if task numbers are in valid range
+
+Step 10: Add Exit Functionality
+    Handle choice '5' to print "Goodbye!" and break the loop to exit the program
