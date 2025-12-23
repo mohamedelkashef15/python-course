@@ -18,12 +18,3 @@ Step 6: Build the Complete Task Feature
 
 Step 7: Build the Delete Task Feature
     Create delete_task() function that shows tasks, gets task number, and removes it from the list
-
-Step 8: Connect Menu to Functions
-    In main() loop, add if-elif statements to call the right function based on user's menu choice
-
-Step 9: Add Input Validation
-    Add try-except blocks to handle invalid numbers and check if task numbers are in valid range
-
-Step 10: Add Exit Functionality
-    Handle choice '5' to print "Goodbye!" and break the loop to exit the program

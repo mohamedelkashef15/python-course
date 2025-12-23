@@ -13,7 +13,7 @@ A simple command-line to-do list built with Python.
 ## How to Run
 
 ```bash
-  python todo.py
+  python main.py
 ```
 
 ## How to Use
@@ -21,14 +21,6 @@ A simple command-line to-do list built with Python.
 1. Choose an option from the menu (1-5)
 2. Follow the prompts
 3. Press 5 to exit
-
-## What You'll Learn
-
-- Python functions
-- Lists and dictionaries
-- Loops and conditionals
-- User input handling
-- Error handling
 
 ## Requirements
 
