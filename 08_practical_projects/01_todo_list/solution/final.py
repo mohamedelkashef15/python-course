@@ -6,6 +6,7 @@ def display_menu():
     print("3. Complete task")
     print("4. Delete task")
     print("5. Exit")
+    
     print("==================")
 
 
@@ -17,6 +18,7 @@ def view_tasks(tasks):
         for i, task in enumerate(tasks, 1):
             status = "✓" if task['completed'] else " "
             print(f"{i}. [{status}] {task['name']}")
+
 
 
 def add_task(tasks):
