@@ -40,6 +40,21 @@ def complete_task(tasks):
         except ValueError:
             print("Please enter a valid number!")
 
+# 1 <= num <= len(tasks)
+
+# 1- clean room => index 0
+# 2- pray 5 times => index 1
+# 3- Study python => index 2
+
+# len(tasks) = 3
+
+# 1 <= num <= 3
+# User enter 2 | 1 <= 2 <=3 | True
+# User enter 5 | 1 <= 5 <= 3 | False
+# User enter 0 | 1 <= 0 <= 3 | False
+
+# tasks[num - 1]['completed'] = True
+# tasks[2 - 1 = 1]["completed"] = True
 
 def delete_task(tasks):
     view_tasks(tasks)
@@ -47,8 +62,8 @@ def delete_task(tasks):
         try:
             num = int(input("\nEnter task number to delete: "))
             if 1 <= num <= len(tasks):
-                deleted = tasks.pop(num - 1)
-                print(f"✓ Deleted: {deleted['name']}")
+                print(f"✓ Deleted: {tasks[num - 1]["name"]}")
+                del tasks[num - 1]
             else:
                 print("Invalid task number!")
         except ValueError:
