@@ -1,0 +1,17 @@
+Step 1: Create Questions List
+    Create a list of dictionaries containing questions, options (as list), and correct answer
+
+Step 2: Initialize Quiz
+    Print welcome message, create score variable set to 0
+
+Step 3: Create Quiz Loop
+    Use enumerate to loop through questions, display question number and text, display all options with numbers
+
+Step 4: Get and Validate User Input
+    Use while loop to get user input as integer, validate input is within range (1 to number of options)
+
+Step 5: Check Answer and Update Score
+    Compare selected option with correct answer, print feedback (correct/wrong), increment score if correct
+
+Step 6: Display Final Results
+    After loop ends, print final score as "score/total_questions"

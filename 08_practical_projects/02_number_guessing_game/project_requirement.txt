@@ -1,0 +1,17 @@
+Step 1: Create Basic Structure
+    Import random, create number_guessing_game() and main() functions with welcome message
+
+Step 2: Generate Secret Number and Variables
+    Generate random number (1-100), set attempts and max_attempts variables
+
+Step 3: Create Game Loop
+    Add while loop with try-except to get user input as integer and increment attempts
+
+Step 4: Validate and Compare
+    Validate input range (1-100), compare guess with secret number, give hints
+
+Step 5: Handle Win and Game Over
+    Print congratulations if correct and return, handle errors, show game over message
+
+Step 6: Add Replay Loop
+    Wrap game call in while True loop, ask to play again, break if done
