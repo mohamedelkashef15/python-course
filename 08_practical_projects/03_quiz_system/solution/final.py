@@ -27,27 +27,28 @@ questions = [
 # 2️⃣ Start the quiz
 print("Welcome to Python Quiz!\n")
 score = 0
+try:
+    for i, q in enumerate(questions, 1):
+        print(f"Q{i}: {q['question']}")
+        for idx, option in enumerate(q['options'], 1):
+            print(f"  {idx}. {option}")
 
-for i, q in enumerate(questions, 1):
-    print(f"Q{i}: {q['question']}")
-    for idx, option in enumerate(q['options'], 1):
-        print(f"  {idx}. {option}")
+        # Get user input
 
-    # Get user input
-    while True:
-        choice = int(input("\nEnter the option number: "))
-        if 1 <= choice <= len(q['options']):
-            break
-        print("Invalid input! Enter a valid option number.")
+        while True:
+            choice = int(input("\nEnter the option number: "))
+            if 1 <= choice <= len(q['options']):
+                break
+            print("Invalid input! Enter a valid option number.")
+        # Check answer
+        if q['options'][choice - 1] == q['answer']:
+            print("✅ Correct!\n")
+            score += 1
+        else:
+            print(f"❌ Wrong! Correct answer: {q['answer']}\n")
 
-    # * compare between answer of question and user selection
-    # print(q["answer"])
-    # print(q["options"][choice - 1])
-    if q['options'][choice - 1] == q['answer']:
-        print("✅ Correct!\n")
-        score += 1
-    else:
-        print(f"❌ Wrong! Correct answer: {q['answer']}\n")
+except ValueError:
+    print("Enter a valid number")
 
 # 3️⃣ Final result
 print(f"Quiz finished! Your score: {score}/{len(questions)}")
