@@ -1,6 +1,4 @@
 # Quiz System in Python
-
-# 1️⃣ Questions list
 questions = [
     {
         "question": "What is the output of 3 + 2 * 2?",
@@ -24,7 +22,6 @@ questions = [
     }
 ]
 
-# 2️⃣ Start the quiz
 print("Welcome to Python Quiz!\n")
 score = 0
 try:
@@ -50,5 +47,4 @@ try:
 except ValueError:
     print("Enter a valid number")
 
-# 3️⃣ Final result
 print(f"Quiz finished! Your score: {score}/{len(questions)}")

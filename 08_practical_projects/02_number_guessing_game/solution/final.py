@@ -1,14 +1,10 @@
 # noinspection DuplicatedCode
 import random
 def number_guessing_game():
-    """A simple number guessing game where the player tries to guess a random number."""
-
     print("Welcome to the Number Guessing Game!")
     print("I'm thinking of a number between 1 and 100.\n")
 
-
     # Generate a random number between 1 and 100
-    # secret_number = 6
     secret_number = random.randint(1, 100)
     attempts = 0
     max_attempts = 5
@@ -33,11 +29,8 @@ def number_guessing_game():
                 print(f"The number was {secret_number}!")
                 return
 
-            print()
-
         except ValueError:
-            print("Invalid input! Please enter a valid number.")
-            print()
+            print("Invalid input! Please enter a valid number.\n")
 
     # If player runs out of attempts
     print(f"\n😔 Game Over! You've used all {max_attempts} attempts.")
@@ -51,9 +44,19 @@ def main():
 
         # Ask if player wants to play again
         play_again = input("\nWould you like to play again? (yes/no): ").lower()
-        if play_again not in ['yes', 'y']:
+        if play_again != "yes":
             print("Thanks for playing! Goodbye!")
             break
         print("\n" + "=" * 30 + "\n")
 
 main()
+
+
+
+
+
+
+
+
+
+
