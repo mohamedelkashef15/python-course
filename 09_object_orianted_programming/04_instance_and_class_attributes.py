@@ -15,7 +15,7 @@ class Car:
     # class attribute
     wheels = 4
     def __init__(self, color, price, km, model):
-        self.color = color
+        self.color = color # instance attribute
         self.price = price
         self.km = km
         self.model = model

@@ -19,7 +19,7 @@ class Car:
         self.km = km
         self.model = model
 
-    # Methods
+    # Instance Methods
     def start(self):
         print(f"{self.model} car has started.")
         print(f"{self.model} car color is {self.c} ")
